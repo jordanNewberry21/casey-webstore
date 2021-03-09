@@ -19,6 +19,7 @@ const middlewareList = process.env.NODE_ENV === 'development' ?
 
 // create the redux store
 const store = createStore(
+  // rootReducer houses all of the reducers
   rootReducer,
   // adds all middleware to the project
   applyMiddleware(...middlewareList),

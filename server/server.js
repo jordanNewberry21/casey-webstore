@@ -9,7 +9,7 @@ const bodyParser = require('body-parser');
 
 // auth stuff
 const sessionMiddleware = require();
-const passport = require();
+const passport = require('./strategies/user.strategy');
 
 // route includes
 

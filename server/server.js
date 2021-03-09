@@ -8,7 +8,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 // auth stuff
-const sessionMiddleware = require();
+const sessionMiddleware = require('./modules/session-middleware');
 const passport = require('./strategies/user.strategy');
 
 // route includes

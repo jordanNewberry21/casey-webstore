@@ -1,12 +1,42 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { Card, Container, Row, Button } from 'react-bootstrap';
+
+// components
+import RegisterForm from './RegisterForm/RegisterForm';
 
 function RegisterPage() {
+
+    const history = useHistory();
+
     return (
-        <div>
-            <h1>
-                Hello World! from the Register Page!
-            </h1>
-        </div>
+        <Container>
+            <Row>
+                <Card>
+                    <Card.Header className="register-header">
+                        <h2>Thanks for shopping with Creations by Casey!</h2>
+                    </Card.Header>
+                    <Card.Body className="register-sub-header">
+                        <h4>In order to complete your order, please register an account.</h4>
+                    </Card.Body>
+                </Card>
+            </Row>
+            <Row>
+                <RegisterForm />
+            </Row>
+
+            <center>
+                <p>Already Registered?</p>
+                <Button
+                    variant="primary"
+                    type="button"
+                    onClick={() => {
+                        history.push('/login');
+                    }}>
+                    Login
+                </Button>
+            </center>
+        </Container>
     )
 }
 

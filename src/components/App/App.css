@@ -1,0 +1,5 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    background: radial-gradient(circle at 100%, slateblue, aliceblue 50%, #eee 75%, rgb(220, 215, 255) 60%);
+  }

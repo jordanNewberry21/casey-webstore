@@ -7,6 +7,8 @@ import {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import './App.css';
+
 // components
 import Nav from '../Nav/Nav';
 import LoginPage from '../LoginPage/LoginPage';

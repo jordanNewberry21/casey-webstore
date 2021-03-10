@@ -1,0 +1,38 @@
+.nav-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    color: slateblue;
+    padding-left: 10px;
+}
+
+.nav {
+  margin: 0 0 30px;
+  background-image: linear-gradient(to bottom right, aliceblue, slateblue);
+  overflow: hidden;
+}
+
+.nav-link {
+  float: right;
+  color: aliceblue;
+  text-align: center;
+  padding: 24px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  background-color: inherit;
+
+  /* these last two make the logout button in
+  the nav bar look like another link */
+  border:none;
+  cursor: pointer;
+  outline:0;
+}
+
+.nav-link:hover {
+  color: slateblue;
+  background-color: aliceblue;
+}
+
+.nav-right {
+  float: right;
+}

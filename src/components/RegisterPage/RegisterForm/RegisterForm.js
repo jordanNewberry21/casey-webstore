@@ -54,7 +54,7 @@ function RegisterForm() {
                         Email
                     </Form.Label>
                     <Form.Control
-                        type="text"
+                        type="email"
                         name="username"
                         value={username}
                         required
@@ -91,6 +91,85 @@ function RegisterForm() {
                         onChange={e => setPasswordConfirm(e.target.value)}
                      />
                 </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="firstName">
+                        First Name
+                    </Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="firstName"
+                        value={firstName}
+                        required
+                        onChange={e => setFirstName(e.target.value)}
+                     />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="lastName">
+                        Last Name
+                    </Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="lastName"
+                        value={lastName}
+                        required
+                        onChange={e => setLastName(e.target.value)}
+                     />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="street">
+                        Street Address
+                    </Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="street"
+                        value={street}
+                        required
+                        onChange={e => setStreet(e.target.value)}
+                     />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="city">
+                        City
+                    </Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="city"
+                        value={city}
+                        required
+                        onChange={e => setCity(e.target.value)}
+                     />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="state">
+                        State
+                    </Form.Label>
+                    <Form.Control
+                        type="text"
+                        name="state"
+                        value={state}
+                        required
+                        onChange={e => setState(e.target.value)}
+                     />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="zip">
+                        Zip Code
+                    </Form.Label>
+                    <Form.Control
+                        type="number"
+                        name="zip"
+                        value={zip}
+                        required
+                        onChange={e => setZip(e.target.value)}
+                     />
+                </Form.Group>
+                <Button
+                    className="btn"
+                    type="submit"
+                    name="submit"
+                >
+                    Register
+                </Button>
             </Form>
         </Container>
     )

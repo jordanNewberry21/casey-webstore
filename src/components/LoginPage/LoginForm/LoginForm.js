@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Col, Row, Form, Button } from 'react-bootstrap';
+import './LoginForm.css';
 
 function LoginForm() {
     // hooks

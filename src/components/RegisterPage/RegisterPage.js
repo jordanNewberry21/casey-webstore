@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Card, Container, Row, Button } from 'react-bootstrap';
+import './RegisterPage.css';
 
 // components
 import RegisterForm from './RegisterForm/RegisterForm';

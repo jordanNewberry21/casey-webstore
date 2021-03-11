@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Container, Button } from 'react-bootstrap';
+import './RegisterForm.css';
 
 
 function RegisterForm() {
@@ -42,7 +43,7 @@ function RegisterForm() {
 
     return (
         <Container>
-            <Form onSubmit={e => {registerUser(e)}}>
+            <Form className="register-form" onSubmit={e => {registerUser(e)}}>
                 <h2>Register User</h2>
                 {registrationMessage && (
                     <h3 className="alert" role="alert">
@@ -51,8 +52,9 @@ function RegisterForm() {
                 )}
                 <Form.Group>
                     <Form.Label htmlFor="username">
-                        Email
+                        Email Address
                     </Form.Label>
+                    <br></br>
                     <Form.Control
                         type="email"
                         name="username"
@@ -175,4 +177,4 @@ function RegisterForm() {
     )
 }
 
-export default RegisterForm
+export default RegisterForm;

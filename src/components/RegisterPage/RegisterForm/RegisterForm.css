@@ -1,0 +1,23 @@
+.register-form input {
+    width: 90%;
+    padding: .3rem;
+    margin: .3rem;
+}
+
+/* .register-form textarea {
+    width: 64vh;
+    margin: auto;
+} */
+
+.register-form{
+    box-sizing: border-box;
+    width: 400px;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto 20px;
+    background-color: inherit;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
+    color: slateblue;
+    
+}

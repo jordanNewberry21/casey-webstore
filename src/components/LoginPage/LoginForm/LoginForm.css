@@ -1,0 +1,31 @@
+.login-header {
+    background-color: inherit; 
+    color: slateblue;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.login-form{
+    box-sizing: border-box;
+    width: 400px;
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto 20px;
+    background-color: inherit;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0, 0.4);
+    color: slateblue;
+    
+}
+
+.login-form input {
+    width: 90%;
+    padding: .3rem;
+    margin: .3rem;
+}
+
+.login-btn {
+    margin-bottom: .6rem;
+    padding-left: 2.3rem ;
+    padding-right: 2.3rem ;
+}

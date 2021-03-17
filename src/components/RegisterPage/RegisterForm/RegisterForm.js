@@ -18,7 +18,7 @@ function RegisterForm() {
     const [zip, setZip] = useState('');
 
     // error messages
-    const registrationMessage = useSelector(state => state.errors.registrationMessage);
+    const registrationMessage = useSelector(store => store.errors.registrationMessage);
 
     // register user function
     const registerUser = (e) => {

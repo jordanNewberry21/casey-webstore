@@ -8,7 +8,7 @@ function LoginForm() {
     const dispatch = useDispatch();
     const [username, setUsername] = useState('');
     const [password, setPassword]= useState('');
-    const loginMessage = useSelector(state => state.errors.loginMessage);
+    const loginMessage = useSelector(store => store.errors.loginMessage);
 
     // login function
     const login = (e) => {

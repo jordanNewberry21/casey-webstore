@@ -13,6 +13,7 @@ import './App.css';
 import Nav from '../Nav/Nav';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
+import Inventory from '../Inventory/Inventory';
 
 class App extends Component {
     componentDidMount() {
@@ -26,7 +27,7 @@ class App extends Component {
                 <Nav />
                 <Switch>
                 {/* Visiting localhost:3000 will redirect to localhost:3000/store */}
-                <Redirect exact from="/" to="/home" />
+                <Redirect exact from="/" to="/store" />
                 <Route
                     exact
                     path="/register"
@@ -37,6 +38,11 @@ class App extends Component {
                     path="/login"
                     component={LoginPage}
                  />
+                 <Route
+                    exact
+                    path="/store"
+                    component={Inventory}
+                />
                 </Switch>
             </div>
             </Router>

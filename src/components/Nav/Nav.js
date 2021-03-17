@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
+import LogOutButton from '../LogOutButton/LogOutButton';
 
 export default function Nav() {
     return (
@@ -13,6 +14,7 @@ export default function Nav() {
                 <Link className="nav-link" to="/login">
                     Login
                 </Link>
+                <LogOutButton className="nav-link" />
             </div>
         </div>
     )

@@ -74,7 +74,7 @@ router.put('/:id', rejectUnauthenticatedAdmin, (req, res) => {
     }
 });
 
-router.delete('/:id', rejectUnauthenticated, (req, res) => {
+router.delete('/:id', rejectUnauthenticatedAdmin, (req, res) => {
   console.log('req.params......', req.params);
   const id = req.params.id;
   const sqlText = `DELETE FROM "product" WHERE id=$1;`;

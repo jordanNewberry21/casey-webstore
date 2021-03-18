@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
 import useStyles from './styles';
 
-function AddItemForm(props) {
+function AddItemForm (props) {
   // hooks
   const [postData, setPostData] = useState({ name: '', description: '', price: '', image: '' });
   const classes = useStyles();

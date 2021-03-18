@@ -4,6 +4,9 @@ const router = express.Router();
 const {
   rejectUnauthenticated,
 } = require('../modules/authentication-middleware');
+const {
+  rejectUnauthenticatedAdmin,
+} = require('../modules/admin-authentication-middleware');
 
 
 router.get('/', (req, res) => { // get all items route
@@ -19,7 +22,7 @@ router.get('/:id', (req, res) => { // get item details route
   console.log('req.params......', req.params);
   const sqlText = `SELECT * FROM "product"
                   WHERE id=$1;`;
-  let itemId = req.params.id;
+  const itemId = req.params.id;
   pool.query(sqlText, [itemId])
       .then((result) => {
         res.send(result.rows); // sending back item data
@@ -29,9 +32,9 @@ router.get('/:id', (req, res) => { // get item details route
 })
 
 
-router.post('/', rejectUnauthenticated, (req, res) => {
+router.post('/', rejectUnauthenticatedAdmin, (req, res) => {
   console.log('req.body......', req.body); // checking post item
-  let item = req.body;
+  const item = req.body;
   const sqlText = `INSERT INTO "product" ("name", "description", "price", "image") 
                   VALUES ($1, $2, $3, $4);`; // sql query with data sanitization
   pool.query(sqlText, [item.name, item.description, item.price, item.image])
@@ -43,11 +46,11 @@ router.post('/', rejectUnauthenticated, (req, res) => {
       })
 });
 
-router.put('/:id', rejectUnauthenticated, (req, res) => {
+router.put('/:id', rejectUnauthenticatedAdmin, (req, res) => {
   console.log('req.params......', req.params);
   console.log('req.body......', req.body); // checking post item to be updated
-  let id = req.params.id;
-  let itemToUpdate = req.body;
+  const id = req.params.id;
+  const itemToUpdate = req.body;
   if (id && !Object.keys(itemToUpdate).length) { // if there is an id but no itemToUpdate object, run this
     const sqlText = `UPDATE "product" SET "featured" = NOT "featured" WHERE id = $1;`
     pool.query(sqlText, [id]) // this query flips the "featured" boolean value
@@ -73,7 +76,7 @@ router.put('/:id', rejectUnauthenticated, (req, res) => {
 
 router.delete('/:id', rejectUnauthenticated, (req, res) => {
   console.log('req.params......', req.params);
-  let id = req.params.id;
+  const id = req.params.id;
   const sqlText = `DELETE FROM "product" WHERE id=$1;`;
   pool.query(sqlText, [id]) // deleting item from product table by id
       .then(result => {

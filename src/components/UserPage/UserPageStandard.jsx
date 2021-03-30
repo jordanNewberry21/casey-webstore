@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import GrantApplicationForm from '../GrantApplicationForm/GrantApplicationForm';
-import AppStatus from '../AppStatus/AppStatus.jsx';
+import OrderStatus from '../OrderStatus/OrderStatus.jsx';
 
 
 
@@ -23,7 +23,7 @@ function UserPage (props) {
 
       {
         user ?
-          <AppStatus app={app} /> :
+          <OrderStatus order={order} /> :
           <GrantApplicationForm />
       }
     </div>

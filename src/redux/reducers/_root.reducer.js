@@ -5,6 +5,7 @@ import inventory from './inventory.reducer';
 import cart from './cart.reducer';
 import details from './details.reducer';
 import feature from './feature.reducer';
+import order from './order.reducer';
 
 
 // root.reducer is where all reducers will live
@@ -15,6 +16,7 @@ const rootReducer = combineReducers ({
     cart, // holds current items in cart
     details, // stores details for specific shop item
     feature, // holds all currently featured items
+    order, // holds order data for logged in user
 });
 
 export default rootReducer;

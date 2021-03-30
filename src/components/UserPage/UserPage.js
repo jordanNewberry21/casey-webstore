@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import AdminHome from '../AdminHome/AdminHome';
-import UserPageStandard from './UserPageStandard.jsx';
+import UserPageStandard from './UserPageStandard';
 
 
 

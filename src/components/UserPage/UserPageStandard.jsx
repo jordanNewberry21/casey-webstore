@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import GrantApplicationForm from '../GrantApplicationForm/GrantApplicationForm';
-import OrderStatus from '../OrderStatus/OrderStatus.jsx';
+import OrderStatus from '../OrderStatus/OrderStatus';
+import Inventory from '../Inventory/Inventory';
 
 
 
@@ -18,13 +18,15 @@ function UserPage (props) {
   //   }, [dispatch]
   // );
 
+  const order = ['Item 1', 'Item 2', 'Item 3'];
+
   return (
     <div>
 
       {
         user ?
           <OrderStatus order={order} /> :
-          <GrantApplicationForm />
+          <Inventory />
       }
     </div>
   );

@@ -5,7 +5,7 @@ import Inventory from '../Inventory/Inventory';
 
 
 
-function UserPage (props) {
+function UserPageStandard (props) {
   
   const user = useSelector(state => state);
   
@@ -34,4 +34,4 @@ function UserPage (props) {
 }
 
 // this allows us to use <App /> in index.js
-export default UserPage;
+export default UserPageStandard;

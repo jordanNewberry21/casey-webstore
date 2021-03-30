@@ -17,6 +17,7 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import Inventory from '../Inventory/Inventory';
+import UserPage from '../UserPage/UserPage';
 
 class App extends Component {
     componentDidMount() {
@@ -54,10 +55,21 @@ class App extends Component {
                     // - if admin, redirect to "/admin"
                     // - else shows RegisterPage at "/registration"
                     exact
-                    path="/registration"
+                    path="/register"
                     component={RegisterPage}
                     authRedirect="/user"
                     adminRedirect="/admin"
+                />
+                <ProtectedRoute
+                    // with authRedirect:
+                    // - if logged in, redirects to "/user"
+                    // - if admin, redirect to "/admin"
+                    // - else shows RegisterPage at "/registration"
+                    exact
+                    path="/user"
+                    component={UserPage}
+                    // authRedirect="/user"
+                    // adminRedirect="/admin"
                 />
                 <AdminRoute
                     // AdminRoute ensures the user is an admin

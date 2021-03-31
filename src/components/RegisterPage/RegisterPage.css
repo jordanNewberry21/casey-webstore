@@ -7,9 +7,15 @@
     color: slateblue;
     text-align: center;
     font-weight: bolder;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .register-sub-header {
     text-align: center;
     color: slateblue;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
 }

@@ -43,7 +43,7 @@ function RegisterForm() {
 
     return (
         <Container>
-            <Form className="register-form" onSubmit={e => {registerUser(e)}}>
+            <Form className="register-form form-horizontal" onSubmit={e => {registerUser(e)}}>
                 <h2>Register User</h2>
                 {registrationMessage && (
                     <h3 className="alert" role="alert">

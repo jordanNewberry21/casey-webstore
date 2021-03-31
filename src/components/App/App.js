@@ -18,6 +18,7 @@ import LoginPage from '../LoginPage/LoginPage';
 import RegisterPage from '../RegisterPage/RegisterPage';
 import Inventory from '../Inventory/Inventory';
 import UserPage from '../UserPage/UserPage';
+import AboutPage from '../AboutPage/AboutPage';
 
 class App extends Component {
     componentDidMount() {
@@ -37,6 +38,17 @@ class App extends Component {
                     exact
                     path="/store"
                     component={Inventory}
+                />
+                <Route
+                    exact
+                    path="/details"
+                    component={Inventory}
+                />
+                <Route
+                    // shows AboutPage at all times (logged in or not)
+                    exact
+                    path="/about"
+                    component={AboutPage}
                 />
                 <ProtectedRoute
                     // with authRedirect:

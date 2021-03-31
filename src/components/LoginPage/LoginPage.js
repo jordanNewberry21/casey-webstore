@@ -9,7 +9,7 @@ function LoginPage() {
     return (
         <div>
             <LoginForm />
-            <center>
+            <div>
                 <p>Not registered?</p>
                 <Button
                     variant="primary"
@@ -19,7 +19,7 @@ function LoginPage() {
                     }}>
                     Register
                 </Button>
-            </center>
+            </div>
         </div>
     )
 }

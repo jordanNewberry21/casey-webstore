@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Card, Container, Row, Button, Col } from 'react-bootstrap';
+import { Card, Container, Button } from 'react-bootstrap';
 import './RegisterPage.css';
 
 // components

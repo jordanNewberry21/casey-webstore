@@ -20,6 +20,7 @@ import Inventory from '../Inventory/Inventory';
 import UserPage from '../UserPage/UserPage';
 import AboutPage from '../AboutPage/AboutPage';
 import ItemDetails from '../ItemDetails/ItemDetails';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
     componentDidMount() {
@@ -93,6 +94,7 @@ class App extends Component {
                     component={AdminHome}
                 />
                 </Switch>
+                <Footer />
             </div>
             </Router>
         )

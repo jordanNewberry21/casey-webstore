@@ -10,6 +10,9 @@ export default function Nav() {
         <div className="nav">
             <h2 className="nav-title">Creations by Casey</h2>
             <div className="nav-right">
+            <Link className="nav-link" to="/about">
+                    About
+                </Link>
                 <Link className="nav-link" to="/register">
                     Register
                 </Link>

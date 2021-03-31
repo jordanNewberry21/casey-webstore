@@ -4,16 +4,16 @@ import './About.css';
 const AboutPage = () => (
   <div className="about">
     <div>
-      <h1>
+      <h1 className="header">
         About Me
       </h1>
     </div>
     <main className="row">
       <div className="col">
-        <img src='https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/137572245_10224494591127832_2210514911782018415_n.jpg?_nc_cat=103&ccb=2&_nc_sid=0debeb&_nc_ohc=In4HaGnCtf0AX9lVeUL&_nc_ht=scontent-msp1-1.xx&oh=f7765becd0fa72e3c51e13a3f53a0e4e&oe=603057E8' alt='kay' />
+        <img src='https://scontent-msp1-1.xx.fbcdn.net/v/t1.6435-9/137572245_10224494591127832_2210514911782018415_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=2CWzW3n-U3wAX9-DpcL&_nc_ht=scontent-msp1-1.xx&oh=1b2caa6fb4749ef2e49284bd2293ffa0&oe=60889861' alt='kay' />
       </div>
       <div className="col">
-        <h4>
+        <h4 className="sub-header">
           To all creatives, Welcome!
         </h4>
         
@@ -24,9 +24,11 @@ const AboutPage = () => (
           My favorite past time is painting, mostly wood and mixed media pieces. I save furniture and other items that were well loved by their former owners and get them ready for a whole new life.
           So glad that you have found me.
         </p>
-        <h5>
-          ... see art everywhere... in everything
-        </h5>
+        <div className="row">
+          <h5 className="footer">
+            ... see art everywhere... in everything
+          </h5>
+        </div>
       </div>
     </main>
   </div>

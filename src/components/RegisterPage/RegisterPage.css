@@ -2,22 +2,21 @@
     text-align: center;
 }
 
-.register-header {
+.card-header {
     background-color: inherit; 
     color: slateblue;
     text-align: center;
     font-weight: bolder;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+    display: block;
+    margin: auto;
+    flex-direction: column;
 }
 
-.register-sub-header {
+.card-body {
     text-align: center;
     color: slateblue;
-    justify-content: center;
-    display: flex;
-    flex-direction: row-reverse;
+    margin: auto;
+    flex-direction: column;
 }
 
 .container {

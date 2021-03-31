@@ -14,15 +14,15 @@ function RegisterPage() {
         <Container>
             <Row>
                 <div>
-                    <div className="register-header">
+                    <Card.Header className="card-header">
                         <h2>Thanks for shopping with Creations by Casey!</h2>
-                    </div>
-                    <div className="register-sub-header">
+                    </Card.Header>
+                    <Card.Body className="card-body">
                         <h4>In order to complete your order, please register an account.</h4>
-                    </div>
+                    </Card.Body>
                 </div>
             </Row>
-            <Row>
+            <Row className="register-row">
                 <RegisterForm />
             </Row>
             

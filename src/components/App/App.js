@@ -19,6 +19,7 @@ import RegisterPage from '../RegisterPage/RegisterPage';
 import Inventory from '../Inventory/Inventory';
 import UserPage from '../UserPage/UserPage';
 import AboutPage from '../AboutPage/AboutPage';
+import ItemDetails from '../ItemDetails/ItemDetails';
 
 class App extends Component {
     componentDidMount() {
@@ -42,7 +43,7 @@ class App extends Component {
                 <Route
                     exact
                     path="/details"
-                    component={Inventory}
+                    component={ItemDetails}
                 />
                 <Route
                     // shows AboutPage at all times (logged in or not)

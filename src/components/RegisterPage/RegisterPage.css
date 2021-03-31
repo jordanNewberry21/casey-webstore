@@ -9,7 +9,7 @@
     font-weight: bolder;
     justify-content: center;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .register-sub-header {
@@ -18,4 +18,8 @@
     justify-content: center;
     display: flex;
     flex-direction: row-reverse;
+}
+
+.container {
+    margin: auto;
 }

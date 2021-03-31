@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Card, Container, Button } from 'react-bootstrap';
+import { Card, Container, Button, Row } from 'react-bootstrap';
 import './RegisterPage.css';
 
 // components
@@ -12,19 +12,19 @@ function RegisterPage() {
 
     return (
         <Container>
-            <center>
-                <Card>
-                    <Card.Header className="register-header">
+            <Row>
+                <div>
+                    <div className="register-header">
                         <h2>Thanks for shopping with Creations by Casey!</h2>
-                    </Card.Header>
-                    <Card.Body className="register-sub-header">
+                    </div>
+                    <div className="register-sub-header">
                         <h4>In order to complete your order, please register an account.</h4>
-                    </Card.Body>
-                </Card>
-            </center>
-            <center>
+                    </div>
+                </div>
+            </Row>
+            <Row>
                 <RegisterForm />
-            </center>
+            </Row>
             
 
             <center>

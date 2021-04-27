@@ -165,13 +165,16 @@ function RegisterForm() {
                         onChange={e => setZip(e.target.value)}
                      />
                 </Form.Group>
-                <Button
-                    className="btn"
-                    type="submit"
-                    name="submit"
-                >
-                    Register
-                </Button>
+                <center>
+                    <Button
+                        className="btn"
+                        type="submit"
+                        name="submit"
+                        style={{ marginTop: "1.2rem" }}
+                    >
+                        Register
+                    </Button>
+                </center>
             </Form>
         </Container>
     )

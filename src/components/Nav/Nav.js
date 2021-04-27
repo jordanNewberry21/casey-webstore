@@ -15,7 +15,7 @@ export default function Nav() {
     };
     
     if (user.admin === true) {
-        loginLinkData.path = '/admin-form';
+        loginLinkData.path = '/admin';
         loginLinkData.text = 'Add Item';
     }
 

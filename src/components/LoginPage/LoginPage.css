@@ -1,0 +1,25 @@
+.register-page p {
+    text-align: center;
+}
+
+.card-header {
+    background-color: inherit; 
+    color: slateblue;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card-body {
+    text-align: center;
+    color: slateblue;
+    margin: auto;
+    flex-direction: column;
+}
+
+.container {
+    margin: auto;
+}

@@ -7,9 +7,10 @@
     color: slateblue;
     text-align: center;
     font-weight: bolder;
-    display: block;
+    display: flex;
     margin: auto;
     flex-direction: column;
+    justify-content: end;
 }
 
 .card-body {

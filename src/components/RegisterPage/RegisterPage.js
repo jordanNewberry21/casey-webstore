@@ -12,7 +12,7 @@ function RegisterPage() {
 
     return (
         <Container>
-            <Row>
+            <Row style={{ flexDirection: "column" }}>
                 <div>
                     <Card.Header className="card-header">
                         <h2>Thanks for shopping with Creations by Casey!</h2>

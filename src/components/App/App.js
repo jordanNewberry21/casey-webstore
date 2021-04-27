@@ -82,8 +82,8 @@ class App extends Component {
                     exact
                     path="/user"
                     component={UserPage}
-                    // authRedirect="/user"
-                    // adminRedirect="/admin"
+                    authRedirect="/user"
+                    adminRedirect="/admin"
                 />
                 <AdminRoute
                     // AdminRoute ensures the user is an admin
@@ -92,6 +92,7 @@ class App extends Component {
                     exact
                     path="/admin"
                     component={AdminHome}
+                    authRedirect="/user"
                 />
                 </Switch>
                 <Footer />

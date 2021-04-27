@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Container, Col, Row, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import './LoginForm.css';
 
 function LoginForm() {
@@ -28,49 +28,44 @@ function LoginForm() {
 
     return (
         <Container>
-            <Col>
-                <Row className="login-header">
-                    <h2>Login</h2>
-                </Row>
-                <Form className="login-form" onSubmit={e => {login(e)}}>
-                    {loginMessage && (
-                        <h3 className="alter" role="alert">
-                            {loginMessage}
-                        </h3>
-                    )}
-                    <Form.Group>
-                        <Form.Label htmlFor="username">
-                            Email:
-                        </Form.Label>
-                        <Form.Control
-                            type="email"
-                            name="username"
-                            required
-                            value={username}
-                            onChange={e => setUsername(e.target.value)}
-                         />
-                    </Form.Group>
-                    <Form.Group>
-                        <Form.Label htmlFor="password">
-                            Password:
-                        </Form.Label>
-                        <Form.Control
-                            type="password"
-                            name="password"
-                            required
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
-                         />
-                    </Form.Group>
-                    <Button
-                        className="btn login-btn"
-                        type="submit"
-                        name="submit"
-                    >
-                        Login
-                    </Button>
-                </Form>
-            </Col>
+            <Form className="login-form" onSubmit={e => {login(e)}}>
+                {loginMessage && (
+                    <h3 className="alter" role="alert">
+                        {loginMessage}
+                    </h3>
+                )}
+                <Form.Group>
+                    <Form.Label htmlFor="username">
+                        Email:
+                    </Form.Label>
+                    <Form.Control
+                        type="email"
+                        name="username"
+                        required
+                        value={username}
+                        onChange={e => setUsername(e.target.value)}
+                        />
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label htmlFor="password">
+                        Password:
+                    </Form.Label>
+                    <Form.Control
+                        type="password"
+                        name="password"
+                        required
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        />
+                </Form.Group>
+                <Button
+                    className="btn login-btn"
+                    type="submit"
+                    name="submit"
+                >
+                    Login
+                </Button>
+            </Form>
         </Container>
     )
 }

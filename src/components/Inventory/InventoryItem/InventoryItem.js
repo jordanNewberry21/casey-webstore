@@ -40,7 +40,7 @@ function InventoryItem (props) {
                 </div>
                 <CardContent>
                     <CardActions className={classes.cardActions}>
-                    <Typography variant="body1" color="textSecondary">${item.price}</Typography>
+                    <Typography variant="body1" color="textSecondary" className={classes.details}>${item.price}</Typography>
                     {/* this ternary is checking if the user is an admin, if so
                     this component will render a different set of buttons */}
                     {user.admin ? 

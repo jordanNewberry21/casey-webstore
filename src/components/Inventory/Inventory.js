@@ -29,19 +29,24 @@ const Inventory = () => {
                 <CircularProgress />
                 :
                 (
-                    <Grid 
-                        className={classes.mainContainer}
-                        cols={3}
-                        container
-                        spacing={2}
-                        direction="row"
-                        justify="flex-start"
-                        alignItems="flex-start"
-                    >
-                        {inventory.map((item) => (
-                            <InventoryItem user={user} item={item} key={item.id} />
-                        ))}
-                    </Grid>
+                    <div className={classes.root}>
+                        <Grid 
+                            className={classes.mainContainer}
+                            cols={3}
+                            container
+                            spacing={2}
+                            direction="row"
+                            flexWrap="wrap"
+                            justify="space-evenly"
+                            alignItems="center"
+                        >
+                            <Grid container item xs={12} spacing={3}>
+                                {inventory.map((item) => (
+                                    <InventoryItem user={user} item={item} key={item.id} />
+                                ))}
+                            </Grid>
+                        </Grid>
+                    </div>
                 )}
         </>
     );

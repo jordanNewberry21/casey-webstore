@@ -32,7 +32,7 @@ function InventoryItem (props) {
     }
     
     return (
-        <Card className={classes.card}>
+        <Card className={classes.card} style={{ flex: 1 }}>
                 <CardMedia style={{ cursor: 'pointer' }} onClick={() => goToDetails()}
                   className={classes.media} image={item.image} title={item.name} />
                 <div className={classes.overlay}>

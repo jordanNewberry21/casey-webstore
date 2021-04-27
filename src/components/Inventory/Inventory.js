@@ -39,7 +39,7 @@ const Inventory = () => {
                         alignItems="flex-start"
                     >
                         {inventory.map((item) => (
-                            <InventoryItem user={user} item={item} />
+                            <InventoryItem user={user} item={item} key={item.id} />
                         ))}
                     </Grid>
                 )}

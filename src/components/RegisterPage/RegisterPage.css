@@ -10,7 +10,7 @@
     display: flex;
     margin: auto;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .card-body {

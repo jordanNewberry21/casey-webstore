@@ -58,13 +58,16 @@ function LoginForm() {
                         onChange={e => setPassword(e.target.value)}
                         />
                 </Form.Group>
-                <Button
-                    className="btn login-btn"
-                    type="submit"
-                    name="submit"
-                >
-                    Login
-                </Button>
+                <center>
+                    <Button
+                        className="btn login-btn"
+                        type="submit"
+                        name="submit"
+                        style={{ marginTop: "1.2rem" }}
+                    >
+                        Login
+                    </Button>
+                </center>
             </Form>
         </Container>
     )

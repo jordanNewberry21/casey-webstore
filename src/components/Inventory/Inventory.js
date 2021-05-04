@@ -38,9 +38,9 @@ const Inventory = () => {
                             direction="row"
                             flexWrap="wrap"
                             justify="space-evenly"
-                            alignItems="center"
+                            alignItems="stretch"
                         >
-                            <Grid container item xs={12} spacing={3}>
+                            <Grid item xs={12} spacing={3}>
                                 {inventory.map((item) => (
                                     <InventoryItem user={user} item={item} key={item.id} />
                                 ))}

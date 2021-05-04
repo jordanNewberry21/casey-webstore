@@ -29,7 +29,7 @@ function InventoryItem (props) {
     }
     
     return (
-      <Card style={{ width: '18rem' }} className="card">
+      <Card style={{ width: '18rem', height: "relative" }} >
         <Card.Img variant="top" src={item.image} style={{ cursor: 'pointer' }} onClick={() => goToDetails()} />
         <Card.Body>
           <Card.Title>{item.name}</Card.Title>

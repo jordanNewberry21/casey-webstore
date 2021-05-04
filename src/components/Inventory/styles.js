@@ -8,6 +8,8 @@ export default makeStyles((theme) => ({
     display: 'flex',
     padding: theme.spacing(2),
     flexGrow: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   smMargin: {
     margin: theme.spacing(1),

@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
 import Dialog from '../Dialog/Dialog';
+import './InventoryItem.css';
 
 function InventoryItem (props) {
     // hooks
@@ -28,13 +29,13 @@ function InventoryItem (props) {
     }
     
     return (
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '18rem' }} className="card">
         <Card.Img variant="top" src={item.image} style={{ cursor: 'pointer' }} onClick={() => goToDetails()} />
         <Card.Body>
-        <Card.Title>{item.name}</Card.Title>
-        <Card.Text>
-          ${item.price}
-        </Card.Text>
+          <Card.Title>{item.name}</Card.Title>
+          <Card.Text>
+            ${item.price}
+          </Card.Text>
         {user.admin ? 
         <>
         <Button style={{color: 'slateblue', backgroundColor: 'aliceblue'}} onClick={() => dispatch({ type: 'DELETE', payload: item.id })}>

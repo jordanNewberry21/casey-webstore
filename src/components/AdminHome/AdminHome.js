@@ -11,7 +11,9 @@ function AdminHome () {
     return (
       <div>
         <h1 id="welcome">Welcome, {user.first_name} {user.last_name}!</h1>
-        <AddItemForm />
+        <div style={{ margin: "10%", height: "100%", }}>
+          <AddItemForm />
+        </div>
       </div>
     );
   

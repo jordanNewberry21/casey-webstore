@@ -15,6 +15,9 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
   },
   buttonSubmit: {
-    marginBottom: 10,
+    margin: "10px",
   },
+  buttonClear: {
+    margin: "0 10px 0 10px"
+  }
 }));

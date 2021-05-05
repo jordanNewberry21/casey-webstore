@@ -91,7 +91,7 @@ function AddItemForm (props) {
           <Button fullWidth className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" >
               Submit
           </Button>
-          <Button fullWidth variant="contained" color="secondary" size="small" onClick={clear} >
+          <Button fullWidth className={classes.buttonClear} variant="contained" color="secondary" size="small" onClick={clear} >
               Clear
           </Button>
       </form>

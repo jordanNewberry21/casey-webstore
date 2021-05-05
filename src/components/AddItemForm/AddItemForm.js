@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { PickerDropPane } from 'filestack-react';
 
 // material-ui
 import { TextField, Button, Typography, Paper } from '@material-ui/core';
@@ -63,14 +64,30 @@ function AddItemForm (props) {
             label="Price" 
             value={postData.price} 
             onChange={(e) => setPostData({ ...postData, price: e.target.value })}/>
-          <TextField 
+          {/*  */}
+          <input
+            accept="image/*"
+            className={classes.input}
+            style={{ display: 'none' }}
+            id="raised-button-file"
+            multiple
+            type="file"
+          />
+          <label htmlFor="raised-button-file">
+            <PickerDropPane
+              apikey={process.env.REACT_APP_FILESTACK_API_KEY}
+              onSuccess={(res) => console.log(res)}
+            />
+          </label>
+          {/* <TextField 
           required 
           fullWidth 
           name="image" 
           variant="outlined" 
           label="Image URL" 
           value={postData.image} 
-          onChange={(e) => setPostData({ ...postData, image: e.target.value })}/>
+          onChange={(e) => setPostData({ ...postData, image: e.target.value })}>
+          </TextField> */}
           <Button fullWidth className={classes.buttonSubmit} variant="contained" color="primary" size="large" type="submit" >
               Submit
           </Button>

@@ -38,10 +38,10 @@ function InventoryItem (props) {
           </Card.Text>
         {user.admin ? 
         <>
-        <Button style={{color: 'slateblue', backgroundColor: 'aliceblue'}} onClick={() => dispatch({ type: 'DELETE', payload: item.id })}>
+        <Button style={{color: 'aliceblue', backgroundColor: 'slateblue'}} onClick={() => dispatch({ type: 'DELETE', payload: item.id })}>
           Remove 
         </Button>
-        <Button style={{color: 'slateblue', backgroundColor: 'aliceblue'}} onClick={() => dispatch({ type: 'SET_FEATURE', payload: item.id })} >
+        <Button style={{color: 'aliceblue', backgroundColor: 'slateblue'}} onClick={() => dispatch({ type: 'SET_FEATURE', payload: item.id })} >
           Feature Item
         </Button>
         <Dialog size="small" itemToUpdate={item} /> 

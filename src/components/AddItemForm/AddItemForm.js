@@ -77,7 +77,6 @@ function AddItemForm (props) {
             <PickerDropPane
               accept="image/*"
               concurrency="1"
-              container="raised-button-file"
               apikey={process.env.REACT_APP_FILESTACK_API_KEY}
               onSuccess={(res) => setPostData({ ...postData, image: res.filesUploaded[0].url })}
             />
